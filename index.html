@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>ACRA</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -97,6 +97,7 @@
                 		</span>
                 		<h4 class="my-3">Pilates</h4>
                 		<p class="text-muted mt-auto">Fortalece o teu core, melhora a postura e aumenta a flexibilidade com as nossas aulas de Pilates.</p>
+						<a class="btn btn-outline-primary mt-2" data-bs-toggle="modal" href="#modalPilates">Saber mais</a>
             		</div>
             		<!-- Relaxação -->
             		<div class="col-md-6 col-lg-3 mb-4">
@@ -115,6 +116,7 @@
                 		</span>
                 		<h4 class="my-3">Cycling</h4>
                 		<p class="text-muted mt-auto">Pedala ao ritmo da música e melhora a tua resistência cardiovascular nas nossas aulas de Cycling.</p>
+						<a class="btn btn-outline-primary mt-2" data-bs-toggle="modal" href="#modalCycling">Saber mais</a>
             		</div>
             		<!-- Circuito -->
             		<div class="col-md-6 col-lg-3 mb-4">
@@ -122,8 +124,9 @@
                     		<i class="fas fa-circle fa-stack-2x text-primary"></i>
                     		<i class="fas fa-person-running fa-stack-1x fa-inverse"></i>
                 		</span>
-                		<h4 class="my-3">Circuito</h4>
+                		<h4 class="my-3">Circuito Funcional</h4>
                 		<p class="text-muted mt-auto">Participa em treinos dinâmicos que combinam força e resistência para um corpo mais saudável.</p>
+						<a class="btn btn-outline-primary mt-2" data-bs-toggle="modal" href="#modalCircuito">Saber mais</a>
             		</div>
             		<!-- Aulas de Grupo -->
             		<div class="col-md-6 col-lg-3 mb-4 offset-lg-3">
@@ -142,6 +145,7 @@
                 		</span>
                 		<h4 class="my-3">Ginásio</h4>
                 		<p class="text-muted mt-auto">Acede a equipamentos modernos e treina ao teu próprio ritmo no nosso ginásio totalmente equipado.</p>
+						<a class="btn btn-outline-primary mt-2" data-bs-toggle="modal" href="#modalGinasio">Saber mais</a>
             		</div>
         		</div>
     </div>
@@ -154,8 +158,8 @@
                     <h3 class="section-subheading text-muted">Aqui podes consultar as Notícias, Destaques e Eventos da ACRA</h3>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4 offset-lg-4">
-                        <!-- Portfolio item 1-->
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio Chocalhando-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                                 <div class="portfolio-hover">
@@ -170,7 +174,37 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolios aqui-->
+						 <!-- Portfolio Dia Mundial da Dança-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/Danca.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Dia Mundial da Dança</div>
+                                <div class="portfolio-caption-subheading text-muted">Aula aberta de Ballet</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+						<!-- Portfolio Dia da Mulher-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/Mulher.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Dia da Mulher</div>
+                                <div class="portfolio-caption-subheading text-muted">Aula aberta de Ballet</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+						
         </section>
         <!-- About-->
         <section class="page-section" id="about">
@@ -331,7 +365,7 @@
             </div>
         </footer>
         <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
+        <!-- Portfolio Chocalhando modal-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -360,76 +394,91 @@
         </div>
     </div>
 </div>
-        <!-- Portfolio item 2 modal popup-->
+        <!-- Portfolio Dia Mundial da Dança modal-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Explore
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Graphic Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal">
+                <img src="assets/img/close-icon.svg" alt="Fechar modal" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project details-->
+                            <h2 class="text-uppercase">Dia Mundial da Dança</h2>
+                            <p class="item-intro text-muted">Uma aula aberta com muita emoção (e poses para a câmara!)</p>
+                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Danca.jpg" alt="Dia Mundial da Dança" />
+                            <p>
+                                Senhores pais e mães, irmãos, tias e tios, avós, vizinhos curiosos e fotógrafos de ocasião…<br><br>
+                                No Dia Mundial da Dança, temos o prazer (e a audácia!) de vos convidar para uma aula aberta de ballet!
+                                As nossas miniestrelas vão ser as professoras e dar uma aula de ballet tão fantástica que até os vossos telemóveis vão chorar de emoção.
+                            </p>
+                            <p>
+                                Será uma oportunidade única para assistirem de perto ao trabalho das nossas bailarinas e, mais do que isso, participarem ativamente como <strong>fotógrafos convidados</strong>,
+                                registando os melhores momentos desta aula inesquecível!
+                            </p>
+                            <p>
+                                Contamos com a vossa presença e estão todos convidados a fazer uma <strong>reportagem fotográfica digna de capa de revista</strong> (ou pelo menos de um story com muitos likes!).
+                            </p>
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                Fechar
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
         <!-- Portfolio item 3 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Finish
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Identity
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal">
+                <img src="assets/img/close-icon.svg" alt="Fechar modal" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project details-->
+                            <h2 class="text-uppercase">Dia da Mulher</h2>
+                            <p class="item-intro text-muted">Uma aula cheia de gargalhadas, magia e dança entre gerações!</p>
+                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Mulher.jpg" alt="Dia Mundial da Mulher" />
+                            <p>
+                                Queridas Mães, Avós e Manas mais Velhas,<br><br>
+                                Preparem-se para um momento único, cheio de <strong>magia</strong>, <strong>gargalhadas</strong> e... muita <strong>dança</strong>!
+                                No Dia Mundial da Mulher, queremos celebrar todas as gerações com uma aula especial onde as nossas pequenas bailarinas vão brilhar – mas desta vez, vocês também vão entrar na dança!
+                            </p>
+                            <p>
+                                Sim, é isso mesmo! Tragam a vossa energia, boa disposição e deixem-se levar pelo ritmo. Vamos inverter os papéis:
+                                primeiro, as nossas pequeninas ensinam-vos uns passinhos para aquecimento (com toda a paciência do mundo, claro), e depois... chegou a vossa vez de mostrar como se dança à moda antiga!
+                            </p>
+                            <p>
+                                Valsas improvisadas, passinhos de discoteca, baile ou folclore – vale tudo!<br>
+                                Ah, e não pensem que escapam da parte mais divertida: temos <strong>tutus e saias para todas</strong>!
+                                Porque todas merecem sentir-se verdadeiras bailarinas, nem que seja só por um dia.
+                            </p>
+                            <p>
+                                Juntam-se a nós nesta dança inesquecível?<br>
+                                <strong>Data:</strong> 5 de Maio
+                            </p>
+                            <p>
+                                <em>P.S.: Não se preocupem, não há júri de "Dança com as Estrelas", só muitos sorrisos e diversão!</em>
+                            </p>
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                Fechar
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
         <!-- Portfolio item 4 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -536,6 +585,7 @@
             </div>
         </div>
 		<!-- Modalidades Modals -->
+		<!-- Ballet -->
 		<div class="portfolio-modal modal fade" id="modalBallet" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -576,6 +626,159 @@
 
                             <br>
                             <p><strong>Professora:</strong> Elsa Neves</p>
+
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+		<!-- Pilates -->
+		<div class="portfolio-modal modal fade" id="modalPilates" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal">
+                <img src="assets/img/close-icon.svg" alt="Fechar modal" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <h2 class="text-uppercase">Pilates</h2>
+                            <p class="item-intro text-muted">Equilíbrio e controlo</p>
+                            O Pilates trabalha a postura, a força e a flexibilidade, promovendo o <strong>equilíbrio físico</strong> e o <strong>bem-estar geral</strong>.<br>
+                            As aulas são orientadas para o controlo do corpo e da respiração, com movimentos suaves e eficazes.
+
+                            <br><br>
+                            <p><strong><span style="font-size: 1.5rem; text-decoration: underline;">Horários</span></strong></p>
+                            <p>
+                                Segundas e quintas-feiras às 19h15<br>
+                                Local: Pavilhão de Alcáçovas
+                            </p>
+
+                            <br>
+                            <p><strong>Professora:</strong> Joana Neves</p>
+
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		
+		<!-- Cycling -->
+		<div class="portfolio-modal modal fade" id="modalCycling" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal">
+                <img src="assets/img/close-icon.svg" alt="Fechar modal" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <h2 class="text-uppercase">Cycling</h2>
+                            <p class="item-intro text-muted">Energia e resistência</p>
+                            O Cycling é uma atividade cardiovascular intensa, que melhora a <strong>resistência física</strong> e ajuda na <strong>queima de calorias</strong>.<br>
+                            As aulas são dinâmicas e motivadoras, com música e ambiente de equipa.
+
+                            <br><br>
+                            <p><strong><span style="font-size: 1.5rem; text-decoration: underline;">Horários</span></strong></p>
+                            <p>
+                                Terças e quintas-feiras às 19h15<br>
+                                Local: Sede da ACRA
+                            </p>
+
+                            <br>
+                            <p><strong>Professor:</strong> Tiago Cardoso</p>
+
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		
+		<!-- Circuito Funcional -->
+		<div class="portfolio-modal modal fade" id="modalCircuito" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal">
+                <img src="assets/img/close-icon.svg" alt="Fechar modal" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <h2 class="text-uppercase">Circuito Funcional</h2>
+                            <p class="item-intro text-muted">Força e agilidade</p>
+                            O Circuito Funcional combina exercícios variados e de curta duração para melhorar a <strong>força</strong>, <strong>agilidade</strong> e <strong>coordenação</strong>.<br>
+                            É ideal para quem procura um treino completo e dinâmico.
+
+                            <br><br>
+                            <p><strong><span style="font-size: 1.5rem; text-decoration: underline;">Horários</span></strong></p>
+                            <p>
+                                Sextas-feiras às 19h15<br>
+                                Local: Sede da ACRA
+                            </p>
+
+                            <br>
+                            <p><strong>Professor:</strong> Tiago Mantas</p>
+
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                Fechar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		
+		<!-- Ginásio -->
+		<div class="portfolio-modal modal fade" id="modalGinasio" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal">
+                <img src="assets/img/close-icon.svg" alt="Fechar modal" />
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <h2 class="text-uppercase">Ginásio</h2>
+                            <p class="item-intro text-muted">Treino livre e personalizado</p>
+                            O ginásio está disponível para treinos livres, com equipamentos adequados ao <strong>reforço muscular</strong>, <strong>condicionamento físico</strong> e <strong>reabilitação</strong>.<br>
+                            Os utentes podem treinar ao seu ritmo, com flexibilidade de horários.
+
+                            <br><br>
+                            <p><strong><span style="font-size: 1.5rem; text-decoration: underline;">Horário de funcionamento</span></strong></p>
+                            <p>
+                                <strong>Segunda-feira:</strong> 12h00 - 22h00<br>
+                                <strong>Terça a sexta-feira:</strong> 08h00 - 22h00<br>
+                                <strong>Sábado:</strong> 09h00 - 14h00
+                            </p>
+
+                            <br>
+                            <p><strong>Funcionamento autónomo</strong></p>
 
                             <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                 <i class="fas fa-xmark me-1"></i>
